@@ -1,7 +1,8 @@
 import "./features.css";
 import arrowImage from "../../assets/images/arrow.png";
 import pancake from "../../assets/images/pancake.png";
-import coinbase from "../../assets/images/coinbase.png";
+import trustswap from "../../assets/images/trustswap.png";
+import uniswap from "../../assets/images/uniswap.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -51,25 +52,25 @@ function Features() {
               modules={[Navigation]}
             >
               <SwiperSlide>
-                <PartnerCard img={coinbase} />
+                <PartnerCard img={trustswap} />
               </SwiperSlide>
               <SwiperSlide>
                 <PartnerCard img={pancake} />
               </SwiperSlide>
               <SwiperSlide>
-                <PartnerCard img={coinbase} />
+                <PartnerCard img={uniswap} />
               </SwiperSlide>
               <SwiperSlide>
                 <PartnerCard img={pancake} />
               </SwiperSlide>
               <SwiperSlide>
-                <PartnerCard img={coinbase} />
+                <PartnerCard img={trustswap} />
               </SwiperSlide>
               <SwiperSlide>
                 <PartnerCard img={pancake} />
               </SwiperSlide>
               <SwiperSlide>
-                <PartnerCard img={coinbase} />
+                <PartnerCard img={uniswap} />
               </SwiperSlide>
               <SwiperSlide>
                 <PartnerCard img={pancake} />
