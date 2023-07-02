@@ -29,7 +29,10 @@ const HEADER_ITEMS = [
   },
 ];
 
-function Navmobile({ handleClose }) {
+function Navmobile({ handleClose, setOpenModal }) {
+  const setOpenModalMobile = (value) => {
+    value === "Connect" && setOpenModal(true);
+  };
   return (
     <div className="wrapper-mobile">
       <div className="nav-mobile-header">
@@ -48,7 +51,11 @@ function Navmobile({ handleClose }) {
       </div>
       <div className="nav-mobile">
         {HEADER_ITEMS?.map(({ name }, key) => (
-          <NavItem value={name} key={key} />
+          <NavItem
+            value={name}
+            key={key}
+            setOpenModalMobile={setOpenModalMobile}
+          />
         ))}
       </div>
     </div>
@@ -57,8 +64,8 @@ function Navmobile({ handleClose }) {
 
 export default Navmobile;
 
-const NavItem = ({ value }) => (
-  <div className="nav-item">
+const NavItem = ({ value, setOpenModalMobile }) => (
+  <div className="nav-item" onClick={() => setOpenModalMobile(value)}>
     <a className="nav-item--link">{value}</a>
   </div>
 );

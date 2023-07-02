@@ -50,7 +50,12 @@ function Header() {
           </div>
         </div>
       </div>
-      {isNavOpen && <Navmobile handleClose={() => setIsNavOpen(false)} />}
+      {isNavOpen && (
+        <Navmobile
+          handleClose={() => setIsNavOpen(false)}
+          setOpenModal={setOpenModal}
+        />
+      )}
 
       {openModal && (
         <ConnectWallet handleCloseModal={() => setOpenModal(false)} />

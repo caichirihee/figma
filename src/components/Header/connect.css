@@ -100,7 +100,7 @@
 .overlay {
   position: fixed;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   z-index: 100;
   background: rgba(201, 182, 182, 0.5);
 }
@@ -143,4 +143,58 @@
   line-height: 1.5;
   font-size: 14px;
   padding-top: 12px;
+}
+
+@media only screen and (max-width: 280px) {
+  .connect-wrapper {
+    left: 0%;
+    width: 280px;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .connect-wrapper {
+    left: 3%;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .connect-wrapper {
+    left: 5%;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  .connect-wrapper {
+    left: 7%;
+  }
+}
+
+@media only screen and (min-width: 410px) {
+  .connect-wrapper {
+    left: 9%;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .connect-wrapper {
+    left: 20%;
+  }
+}
+
+@media only screen and (min-width: 561px) and (max-width: 740px) {
+  .connect-wrapper {
+    left: 18%;
+  }
+}
+
+@media only screen and (min-width: 741px) and (max-width: 1024px) {
+  .connect-wrapper {
+    left: 30%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .connect-wrapper {
+    left: 35%;
+  }
 }
